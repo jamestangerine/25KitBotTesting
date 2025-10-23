@@ -85,7 +85,7 @@ public class RobotContainer {
     driveSubsystem.setDefaultCommand(new DriveCommand(
         () -> -driverController.getLeftY() *
             (driverController.getHID().getRightBumperButton() ? 1 : 0.5),
-        () -> -driverController.getRightX(),
+        () -> -driverController.getLeftX(),
         driveSubsystem));
 
     // Set the default command for the roller subsystem to an instance of
